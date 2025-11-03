@@ -4,8 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Amanda Schnepper - Perfil</title>
+
+  <!-- Importação das fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <style>
-  /* Fundo preto da página (ou da seção) */
+  /* Fundo preto da página */
   body {
     background-image: url('fundo.png');
     background-size: cover;
@@ -13,35 +17,45 @@
     background-attachment: fixed;
     background-position: center center;
     margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    color: white;
+  }
+
+  /* Títulos */
+  h1, h2, h3 {
+    font-family: 'Bitter', serif;
+    color: white;
+  }
+
+  /* Texto padrão */
+  p, li, span, div {
+    font-family: 'Inter', Arial, sans-serif;
   }
 
  .timeline {
     max-width: 700px;
     margin: 40px auto;
     color: #fff;
-    font-family: Arial, sans-serif;
-    /* REMOVER text-align aqui */
   }
   
   .timeline h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #f7f7f7;
-    text-align: center; /* APLICA centralização só no título */
+    text-align: center;
   }
   
   .timeline-container {
     display: flex;
     flex-direction: column;
-    gap: 12px; /* espaçamento entre itens */
+    gap: 12px;
   }
   
   .timeline-item {
     display: flex;
-    gap: 20px; /* aumenta o espaço entre a linha e o conteúdo */
+    gap: 20px;
     padding: 12px 0;
     position: relative;
-    padding-left: 30px; /* espaço para a linha (pseudo-elemento) */
+    padding-left: 30px;
   }
 
   .timeline-item::before {
@@ -51,18 +65,17 @@
     top: 0;
     bottom: 0;
     width: 4px;
-    background: linear-gradient(to bottom, #FF9B54, #FF7F51, #CE4257, #720026, #4F000B); /* degradê com vírgulas corrigido */
+    background: linear-gradient(to bottom, #FF9B54, #FF7F51, #CE4257, #720026, #4F000B);
     border-radius: 2px;
   }
   
   .timeline-date {
     flex-shrink: 0;
-    width: 120px;         /* mais largura para afastar bem da linha */
+    width: 120px;
     font-size: 0.85rem;
     font-weight: bold;
-    color: #f7f7f7;
     padding-top: 4px;
-    padding-left: 10px;   /* afasta da linha vertical */
+    padding-left: 10px;
   }
   
   .timeline-content {
@@ -85,12 +98,10 @@
   .skills-languages {
     text-align: center;
     margin: 60px auto;
-    color: white;
   }
   .skills-languages h2 {
     font-size: 2rem;
     margin-bottom: 30px;
-    color: white;
   }
   .skills-container {
     display: flex;
@@ -105,7 +116,6 @@
     width: 140px;
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
     transition: transform 0.2s ease;
-    color: white;
   }
   .skill-item:hover {
     transform: scale(1.05);
@@ -119,7 +129,6 @@
     margin: 0;
     font-weight: bold;
     font-size: 1rem;
-    color: white;
   }
     
   /* Research Projects */
@@ -127,25 +136,22 @@
     max-width: 900px;
     margin: 80px auto;
     text-align: left;
-    color: white;
   }
 
   .projects h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2rem;
-    color: white;
   }
   
  .project-card {
     position: relative;
     background-color: #111;
     border-radius: 8px;
-    padding: 20px 25px 20px 30px; /* espaço extra à esquerda pro gradiente */
+    padding: 20px 25px 20px 30px;
     margin-bottom: 30px;
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
-    color: white;
-    overflow: hidden; /* esconde o pseudo-elemento fora do card */
+    overflow: hidden;
   }
   
   .project-card::before {
@@ -155,14 +161,13 @@
     top: 0;
     bottom: 0;
     width: 5px;
-    background: linear-gradient(to bottom, #FF9B54, #FF7F51, #CE4257, #720026, #4F000B); /* gradiente vertical */
+    background: linear-gradient(to bottom, #FF9B54, #FF7F51, #CE4257, #720026, #4F000B);
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
   }
   
   .project-card h3 {
     margin-top: 0;
-    color: white;
   }
   
   .project-card p {
@@ -191,7 +196,6 @@
     margin: 40px auto;
   }
   section.expertise > h2 {
-    color: white;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 30px;
@@ -203,28 +207,18 @@
     justify-items: center;
   }
   .card {
-    background: #000000; /* fundo preto */
+    background: #000000;
     border-radius: 12px;
     padding: 20px;
     width: 100%;
     max-width: 300px;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    /* borda degradê com plasma */
     border: 4px solid;
     border-image-slice: 1;
     border-width: 4px;
-    border-image-source: linear-gradient(
-      45deg,
-      #FF9B54,
-      #FF7F51,
-      #CE4257,
-      #720026,
-      #4F000B
-    );
+    border-image-source: linear-gradient(45deg,#FF9B54,#FF7F51,#CE4257,#720026,#4F000B);
   }
   .card h3 {
     margin-top: 0;
@@ -232,43 +226,12 @@
     font-size: 1.4rem;
     text-align: center;
     text-shadow: 1px 1px 3px #000;
-    color: white;
-    font-family: Arial, sans-serif;
   }
   .card p {
     flex-grow: 1;
     font-size: 0.95rem;
     margin-bottom: 15px;
     text-align: center;
-    color: white;
-    font-family: Arial, sans-serif;
-  }
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-top: 10px;
-    justify-content: center;
-  }
-  
-  .tags span {
-    background-color: #ffffff20; /* cor clara com transparência */
-    color: white;
-    font-size: 0.75rem;
-    padding: 4px 10px;
-    border-radius: 999px;
-    border: 1px solid #ffffff30;
-    white-space: nowrap;
-    transition: background 0.3s ease;
-  }
-  
-  .tags span:hover {
-    background-color: #ffffff40;
-  }
-  
-  .tags img {
-    margin: 3px 5px;
-    vertical-align: middle;
   }
 
  /* Contato */
@@ -276,12 +239,9 @@
     max-width: 700px;
     margin: 50px auto;
     text-align: center;
-    color: white;
-    font-family: Arial, sans-serif;
   }
   
   section.contact > h2 {
-    color: white;
     font-size: 2rem;
     margin-bottom: 20px;
   }
@@ -297,12 +257,12 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 80px;             /* ⬅️ aumentei a largura */
-    height: 50px;            /* ⬅️ ligeiramente mais alto */
+    width: 80px;
+    height: 50px;
     background-color: #222;
     border-radius: 14px;
     transition: transform 0.2s ease;
-    padding: 10px;           /* ⬅️ ajuda a não ficar apertado */
+    padding: 10px;
   }
   
   .contact-links a:hover {
@@ -310,8 +270,8 @@
   }
   
   .contact-links img {
-    width: 90%;        /* em vez de tamanho fixo, usa % da caixa */
-    height: auto;      /* mantém a proporção da imagem */
+    width: 90%;
+    height: auto;
     object-fit: contain;
     display: block;
     margin: 0 auto;
@@ -324,8 +284,6 @@
   footer {
     text-align: center;
     margin: 40px auto;
-    color: white;
-    font-family: Arial, sans-serif;
   }
 
   @media(max-width: 600px) {
@@ -342,30 +300,30 @@
   }
   </style>
 </head>
-<body>
 
+<body>
 <header style="
   color: white;
   padding: 60px 20px;
   text-align: center;
   border-radius: 0 0 20px 20px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-  font-family: Arial, sans-serif;
 ">
   <h1 style="font-size: 3rem; margin-bottom: 10px; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">
     Amanda Piveta Schnepper
   </h1>
   <p style="font-size: 1.3rem; max-width: 700px; margin: 0 auto; text-shadow: 1px 1px 4px rgba(0,0,0,0.6);">
-    Under construction
+    I believe science has the power to change lives. That’s why I dedicate my work to transcriptome analysis — to better understand complex diseases and discover new therapeutic paths that bring hope and improve patients’ quality of life.
   </p>
 </header>
+
 
 <section class="timeline">
   <h2>Academic Background</h2>
   <div class="timeline-container">
 
     <div class="timeline-item">
-      <div class="timeline-date">2021 – Present</div>
+      <div class="timeline-date">2022 – Present</div>
       <div class="timeline-content">
         <h3>Ph.D. in Genetics</h3>
         <p>São Paulo State University (UNESP) – Focused on transcriptomic analysis of non-coding RNAs in cancer associated cachexia.</p>
@@ -373,7 +331,7 @@
     </div>
 
     <div class="timeline-item">
-      <div class="timeline-date">2019 – 2021</div>
+      <div class="timeline-date">2019 – 2022</div>
       <div class="timeline-content">
         <h3>M.Sc. in Biotecnology</h3>
         <p>São Paulo State University (UNESP) - Use of CRISPR/Cas9 technology to lncRNAs editing in Saccharomyces cerevisiae.</p>
@@ -418,7 +376,7 @@
   <h2>🔬 Research Projects</h2>
 
   <div class="project-card">
-    <h3>Exploring lncRNAs in cancer-associated cachexia)</h3>
+    <h3>Exploring lncRNAs in cancer-associated cachexia</h3>
     <p>I investigate the role and regulation of long non-coding RNAs in transcriptomic datasets. This includes identification and classification of lncRNAs, expression profiling, and functional prediction using bioinformatics pipelines in public data.</p>
     <div class="tags">
       <span>Gencode</span>
