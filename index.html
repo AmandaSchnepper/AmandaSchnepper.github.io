@@ -82,7 +82,77 @@
       margin: 0 0 4px 0;
       font-size: 1rem;
     }
+        /* --- Programming Languages --- */
+    .skills-languages {
+      text-align: center;
+      margin: 60px auto 40px auto; /* reduz um pouco o topo e define espaço inferior */
+      color: white;
+    }
     
+    .skills-languages h2 {
+      font-size: 2rem;
+      margin-bottom: 25px; /* espaço entre título e os boxes */
+      color: white;
+    }
+    
+    .skills-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px; /* reduz espaçamento excessivo entre boxes */
+      margin: 0 auto;
+    }
+    
+    .skill-item {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 12px;
+      width: 140px;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+      transition: transform 0.2s ease;
+      color: white;
+      text-align: center; /* garante alinhamento do texto */
+    }
+    
+    .skill-item img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+    
+    .skill-item p {
+      margin: 0;
+      font-weight: bold;
+      font-size: 1rem;
+      color: white;
+    }
+    
+    /* --- Research Projects --- */
+    .projects {
+      max-width: 900px;
+      margin: 60px auto; /* reduz um pouco o topo para ajustar ao Programming Languages */
+      text-align: left;
+      color: white;
+    }
+    
+    .projects h2 {
+      text-align: center;
+      margin-bottom: 35px; /* mantém espaçamento entre título e cards */
+      font-size: 2rem;
+      color: white;
+    }
+    
+    .project-card {
+      position: relative;
+      background-color: #111;
+      border-radius: 8px;
+      padding: 20px 25px 20px 30px;
+      margin-bottom: 25px; /* reduz espaçamento entre os cards */
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+      color: white;
+      overflow: hidden;
+    }
+
     /* --- CARDS DE EXPERTISE --- */
     section.expertise {
       max-width: 900px;
